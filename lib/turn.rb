@@ -17,7 +17,7 @@ end
 def input_to_index(num)
   if num.to_i
     num.to_i - 1
-  else 
+  else
     -1
   end
 end
