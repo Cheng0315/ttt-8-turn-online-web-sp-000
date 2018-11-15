@@ -14,6 +14,14 @@ def valid_move?(board, idx)
   end
 end
 
-def move(board, idx, char)
+def input_to_index(num)
+  if num.to_i
+    num.to_i - 1
+  else 
+    -1
+  end
+end
+
+def move(board, idx, char = "X")
   board[idx] = char
 end
