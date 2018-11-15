@@ -7,7 +7,7 @@ def display_board(board)
 end
 
 def valid_move?(board, idx)
-  if position_taken? && idx.between?(0, 8)
+  if position_taken?(board, idx) && idx.between?(0, 8)
     true
   else
     false
